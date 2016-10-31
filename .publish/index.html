@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Designing User-Friendly Ingestion Workflows</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+</head>
+<body class="shower list">
+	<header class="caption">
+		<h1>Designing User-Friendly Ingestion Workflows</h1>
+		<p>Eli Zoller and Sarah Sweeney</p>
+	</header>
+	<section class="slide" id="cover">
+		<h2>Designing User-Friendly Ingestion Workflows</h2>
+		<p>Brought to you by <br/>Eli Zoller and Sarah Sweeney<br/> from <a href="http://library.northeastern.edu">Northeastern University Libraries</a></p>
+		<!-- <img src="pictures/cover.jpg" alt="" class="cover"> -->
+		<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+			-->
+		<style>
+			#cover h2 {
+				margin:30px 0 0;
+				text-align:center;
+				font-size:70px;
+				}
+			#cover p {
+				margin:10px 0 0;
+				text-align:center;
+				font-style:italic;
+				font-size:20px;
+				}
+			#two.slide img {
+				max-height: 65%;
+				display:block;
+				margin-left:auto;
+				margin-right:auto;
+			}
+		</style>
+	</section>
+	<section class="slide" id="one">
+		<h2>A Little Background</h2>
+		<ol>
+			<li>Awesome digital repository</li>
+			<li>Variety of kinds of objects</li>
+			<li>Variety of kinds of metadata</li>
+			<li>Users from different parts of campus</li>
+			<li>Users with different skillsets</li>
+		</ol>
+	</section>
+	<section class="slide" id="two">
+		<h2>How to get all the things in the DRS?</h2>
+		<img src="pictures/all_the_things.png" class="">
+	</section>
+	<section class="slide" id="three">
+		<h2>And...</h2>
+		<ul>
+			<li>Not burden the users</li>
+			<li>Fit into existing workflows</li>
+			<li>Improve existing workflows??</li>
+			<li>Be specific enough but not too specific</li>
+			<li>Open the doors for more users</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h1>Our solution</h1>
+		<h2>6 "loaders"</h2>
+	</section>
+	<section class="slide">
+		<h2>IPTC Photograph Loader</h2>
+		<ul>
+			<li>University Marketing and Marketing departments in various schools and colleges</li>
+			<li>Zip file of JPGs</li>
+			<li>Metadata extracted from IPTC header and translated into MODS</li>
+			<li>~40,000 photos to date</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Multipage</h2>
+		<ul>
+			<li>Library staff - originally designed around a specific library collection</li>
+			<li>Zip file of images and their associated MODS XML metadata</li>
+			<li>Loads sequential images for objects like postcards and page images</li>
+			<li>~1,500 photos to date</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>XML</h2>
+		<h3>Metadata + Files</h3>
+		<ul>
+			<li>Archives and Special Collections and Library staff</li>
+			<li>Zip file of files and MODS XML</li>
+			<li>Loads new files with their associated metadata</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>XML</h2>
+		<h3>Metadata Only</h3>
+		<ul>
+			<li>Archives and Special Collections and Library staff</li>
+			<li>Zip file of MODS XML</li>
+			<li>Replaces existing MODS XML with provided file</li>
+			<li>~4,000 files new + metadata only</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Spreadsheet</h2>
+		<h3>Metadata + Files</h3>
+		<ul>
+			<li>Archives and Special Collections and Library staff on behalf of other projects</li>
+			<li>Zip file of files and excel file</li>
+			<li>Loads new files with their associated metadata by transforming spreadsheet metadata into MODS XML</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Spreadsheet</h2>
+		<h3>Metadata Only</h3>
+		<ul>
+			<li>Archives and Special Collections and Library staff on behalf of other projects</li>
+			<li>Zip file containing an excel file</li>
+			<li>Replaces existing MODS XML with spreadsheet metadata transformed into MODS XML</li>
+			<li>~10,000 files new + metadata only</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>University Marketing and Communications</h2>
+		<h3>Before</h3>
+		<img src="pictures/marcom_before.png" style="width:90%">
+		<h3>After</h3>
+		<img src="pictures/marcom_after.png" style="width:90%">
+		<!-- <ul>
+			<li>Minimal disruption to existing workflow</li>
+			<li>Minimal work within the DRS</li>
+		</ul> -->
+	</section>
+	<section class="slide">
+		<h2>Archives and Special Collections</h2>
+		<h3>Before</h3>
+		<img src="pictures/archives_before.png" style="width:100%">
+		<h3>After</h3>
+		<img src="pictures/archives_after.png" style="width:100%">
+		<!-- <ul>
+			<li>Less technical training for staff</li>
+			<li>Lower barrier quality control</li>
+		</ul> -->
+	</section>
+	<section class="slide">
+		<h2>Questions?</h2>
+		<h2>Advice?</h2>
+		
+		<br/>
+		<h2>Thanks!</h2>
+	</section>
+
+	<p class="badge">
+		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+	</p>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>
